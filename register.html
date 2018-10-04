@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Student</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<form action="http://localhost:8080/save" method="GET">
+  <fieldset>
+    <legend>Register</legend>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" type="email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+    </div>
+    <fieldset class="form-group">
+      <label for='gender'>Gender</label>
+      <div id='gender' class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" name="gender" id="female" value="female" checked="" type="radio">
+          Female
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input class="form-check-input" name="gender" id="male" value="male" type="radio">
+          Male
+        </label>
+      </div>
+       </fieldset>
+    <button type="submit" class="form-control btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+</body>
+</html>

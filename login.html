@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<form action="http://localhost:8080/login" method="GET">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" type="email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <button type="submit" class="form-control btn btn-primary">Login</button>
+  </fieldset>
+</form>
+
+</body>
+</html>
